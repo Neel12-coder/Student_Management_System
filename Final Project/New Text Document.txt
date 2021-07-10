@@ -1,0 +1,34 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+class LogIn
+{
+Container c;
+JLabel lblUname,lblPassword;
+JTextField txtUname,txtpassword;
+JButton btnSubmit
+Login()
+{
+c = getContentPane();
+c.setLayout(new FlowLayout());
+JLabel lblUname= new JLabel("Username");
+JLabel lblPassword = new JLabel("Password");
+JTextField txtUname = new JTextField(15);
+JTextField txtPassword = new JTextField(15);
+JButton btnSubmit = new JButton("Submit");
+c.add(lblUname);
+c.add(txtUname);
+c.add(lblPassword);
+c.add(txtPassword);
+c.add(btnSubmit);
+setSize(400,250);
+setLocationRelativeTo(null);
+setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+setVisible(true);
+}
+public static void main(String args[])
+{
+Login l = new Login();
+}
+}
